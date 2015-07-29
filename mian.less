@@ -1,0 +1,21 @@
+@charset"utf-8";
+@w:100px;
+@h:100px;
+@b:red;
+.rounded-corners(@radius:5px){
+	-webkit-border-radius:@radius;
+	-moz-border-radius:@radius;
+	-ms-border-radius:@radius;
+	-o-border-radius:@radius;
+	border-radius:@radius;
+}
+.border(@b_w:1px){
+	border:@b_w+3 solid yellow;
+}
+.div1{
+	width:@w;
+	height:@h;
+	background:@b;
+	.rounded-corners();
+	.border(2px);
+}
